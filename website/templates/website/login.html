@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> {% load static %}ERP </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/Stylesheet1.css' %}">
+  <style>
+      body {
+
+          background-image: url({% static 'images/banner1.jpg' %});
+          background-repeat: no-repeat;
+      }
+        </style>
+</head>
+    <body >
+{{message}}
+        <form method="post" action="/adminn/">
+             {% csrf_token %}
+
+            <div class="login-box">
+            <h1 style="color: white;"><b>Login Here</b></h1><br />
+            <img src= "{% static 'images/LKCE1.png' %} "class="avatar">
+
+            <span class="glyphicon glyphicon-user"></span><label>USER_ID</label>
+            <input type="text"  name="userid" placeholder="Enter Username" required />
+            <span class="glyphicon glyphicon-eye-close" style="color: white;"></span><label>PASSWORD</label>
+            <input type="password" name="password" class="lock" placeholder="Enter Password" title="Minimum 8 characters" required />
+           <br><br />
+            <input type="submit" name="submit" value="Login"><br>
+
+
+
+            <strong>{{ message }}</strong>
+
+        </div></form>
+
+        </body>
+</html>

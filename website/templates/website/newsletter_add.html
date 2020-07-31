@@ -1,0 +1,26 @@
+{% extends "website/adminn.html" %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    {% block title %} Add Newspaper Pictures {% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/Stylesheet1.css' %}">
+</head>
+<body>
+
+{% block content %}
+    <div>   </div>
+    <form method = "post"  align="center" enctype="multipart/form-data" style="color:white";>
+        <div class = "login-box">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="button"  style="background-color:black; color:white; padding:15px; border-radius:20px;">
+							UPLOAD
+						</button>
+  </div>  </form>
+
+{% endblock %}
+</body>
+</html>

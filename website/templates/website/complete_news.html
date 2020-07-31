@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EVENTS</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+ <center> <h3 style="color:orange;">NEWS</h3></center>
+  {% for i in l1 %}
+      <i class="fa fa-hand-o-right" style="font-size:24px;color:orange"></i> {{i.info}}
+   <br>
+      {% endfor %}
+
+<br><br>
+ <center> <h3 style="color:orange;">PLACEMENTS</h3> </center>
+  {% for i in l2 %}
+      <i class="fa fa-hand-o-right" style="font-size:24px;color:orange"></i> {{i.info}}
+   <br>
+      {% endfor %}
+  <br><br>
+ <center>  <h3 style="color:orange;">UPCOMING EVENTS</h3> </center>
+   {% for i in l3 %}
+      <i class="fa fa-hand-o-right" style="font-size:24px;color:orange"></i> {{i.info}}
+   <br>
+      {% endfor %}
+  <br><br>
+  <center> <h3 style="color:orange;">ALUMNI</h3> </center>
+   {% for i in l4 %}
+       <i class="fa fa-hand-o-right" style="font-size:24px;color:orange"></i>{{i.info}}
+   <br>
+      {% endfor %}
+  <br><br>
+
+
+  </body>
+</html>

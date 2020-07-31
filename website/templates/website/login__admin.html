@@ -1,0 +1,38 @@
+{% load static %}
+ <style>
+      body {
+
+          background-image: url({% static 'images/banner1.jpg' %});
+          background-repeat: no-repeat;
+      }
+        </style>
+
+<head>
+    <meta charset="UTF-8">
+    <title> {% load static %}Login Page </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/Stylesheet1.css' %}">
+
+</head>
+{{message}}
+<body>
+{% block content %}
+    <div>   </div>
+    <br><br><br>
+
+    <form method = "post"  align="center" enctype="multipart/form-data" style="color:white">
+        <div class="login-box">
+            <h1 style="color: black;"><b>Login Here</b></h1><br />
+            <img src= "{% static 'images/LKCE1.png' %} "class="avatar">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="button"  style="background-color:black; color:white; padding:15px; border-radius:20px;">
+							LOGIN
+						</button>
+        </div>   </form>
+
+{% endblock %}
+</body>
+</html>

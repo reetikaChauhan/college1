@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>{% load static %}ERP</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+      <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+      <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+      <link rel="stylesheet" href="{% static 'css/classy-nav.min.css' %}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        h5{
+            font-size:17px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area d-flex justify-content-between align-items-center" style="background-color:lightgray;height:35px;" >
+            <!-- Contact Info -->
+            <div class="contact-info"  >
+                <a href="#"><span>Phone:</span>9779251682</a>
+                <a href="#"><span>Email:</span> preetkomal843@gmail.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us" >
+
+                 <a href="#">Anti-Ragging</a>
+                <a href="#">Downloads</a>
+                <a href="/index">HOME</a>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="clever-main-menu ">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="cleverNav" style="background-color:#0e3066;height: 80px";>
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="'/home'"><img src="{% static 'img/collogo.png' %}" width="200px" height="200px"/></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                       <div class="classynav" >
+                            <ul>
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>ABOUT US</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="/about"><b>About Us </b></a></li>
+                                        <li><a href="/Ourgoverningbody">Our Govering Body</a></li>
+                                        <li><a href="/Ourcoreteam">Oue Core-Team</a></li>
+                                        <li><a href="/">From the Desk Of</a>
+
+
+                                        <ul class="dropdown" style="color:white">
+                                        <li><a href="/p1">Our President</a></li>
+                                        <li><a href="/p2">Our Group Director</a></li>
+                                        <li><a href="/p3">Oue Dy. Director(A.A.)</a></li>
+                                        <li><a href="/p4">Our Director</a></li>
+
+                                    </ul></li>
+                                        <li><a href="#">Vision</a></li>
+                                        <li><a href="#">Mission</a></li>
+                                        <li><a href="#">Core Values</a></li>
+                                        <li><a href="/infrast">Infrastructure</a></li>
+                                    </ul>
+                                </li>
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>ADMISSION</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="#"><b>Courses Offer</b></a>
+                                        <ul class="dropdown" style="color:white">
+                                        <li><a href="/btech">B.Tech.</a></li>
+                                        <li><a href="/diploma">Diploma</a></li>
+                                        <li><a href="/bvoc">B.Voc.</a></li>
+                                        <li><a href="/bsc">B.Sc.</a></li>
+
+                                   </ul></li>
+                                        <li><a href="#">Admission Criteria</a></li>
+                                        <li><a href="/fee">Fee Structure</a></li>
+                                        <li><a href="#">Scholarship</a></li>
+                                        <li><a href="#">Information Brocher</a></li>
+
+                                    </ul>
+                                </li>
+                                 <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>ACADEMIC</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="#"><b>Departments</b></a></li>
+                                        <li><a href="#">Syllabus</a>
+                                       <ul class="dropdown" style="color:white">
+                                        <li><a href="https://www.ptu.ac.in/userfiles/file/engg_syllab/b-tech1-11_pdf.pdf">Applied Science</a>
+                                             </li>
+                                        <li><a href="#">B.Tech.</a>
+
+                                           <ul class="dropdown" style="color:white">
+                                        <li><a href="http://www.ptu.ac.in/userfiles/file/engg_syllab/civil/29-04-19%20B_Tech_Civil_scheme_2018_syllabus_3_4-.pdf">CE</a></li>
+                                        <li><a href="http://www.ptu.ac.in/userfiles/file/engg_syllab/CSE/B_Tech_%20CSE%20Batch%202018%20(07-05-2020).pdf">CSE</a></li>
+                                        <li><a href="http://www.ptu.ac.in/userfiles/file/engg_syllab/EEE/22-07-2019%20%20Electronics%20EE.pdf">ECE</a></li>
+                                        <li><a href="http://www.ptu.ac.in/userfiles/file/engg_syllab/Mechanical/12July2019-BTech-ME-3-4-Sem-Batch-2018.pdf">ME</a></li>
+
+                                   </ul></li>
+                                        <li><a href="#">Diploma</a>
+
+                                           <ul class="dropdown" style="color:white">
+                                        <li><a href="#">CE</a></li>
+                                        <li><a href="#">CSE</a></li>
+                                        <li><a href="#">ECE</a></li>
+                                        <li><a href="#">ME</a></li>
+
+                                   </ul></li>
+                                        <li><a href="#">B.Voc.</a></li>
+                                        <li><a href="#">B.Sc.</a></li>
+
+                                   </ul></li>
+                                        <li><a href="/calender_show">Academic Calender</a></li>
+                                    </ul>
+                                </li>
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>PLACEMENTS</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="/place1"><b>Placement Cell</b></a></li>
+                                        <li><a href="/place2">Industry Partners</a></li>
+                                        <li><a href="/place3"> Recruiters</a></li>
+                                        <li><a href="#">Industrial Visits</a></li>
+                                        <li><a href="/placed_studentalbum"> Students Placed</a></li>
+                                        <li><a href="#"> Placements</a></li>
+                                    </ul>
+                                </li>
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>ACHIEVEMENTS</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="#"><b>Felicitation</b></a></li>
+                                        <li><a href="#">Academic </a></li>
+                                        <li><a href="#">Co-curricular </a></li>
+                                        <li><a href="#">Sports </a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>QUALITY WORK</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="#"><b>TEQIP-IQSE</b></a></li>
+                                        <li><a href="https://nptel.ac.in/">Swayan NPTEL</a></li>
+                                        <li><a href="#">ERP</a></li>
+                                        <li><a href="#">Research Initiatives</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"><b>GALLERY</b></a>
+                                   <ul class="dropdown" style="color:white">
+                                        <li><a href="/photogallery"><b>Photo Gallery</b></a></li>
+                                        <li><a href="/newspapersalbum">News Gallery</a></li>
+                                        <li><a href="/newletter_display">News Letters</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a style="font-size: 13px;color:orange;font-family:'Times New Roman', Times, serif"  href="/contactus"><b>CONTACTS</b></a></li>
+
+
+                            </ul>
+
+
+                            <!-- Register / Login -->
+
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+                <div class="container-fluid" style="width:100%;height:5px;background-color:orange"></div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <br>
+     <section class="register-now section-padding-100-0 d-flex justify-content-between align-items-center" >
+        <!-- Register Contact Form -->
+
+            <div class="container-fluid mb-100 wow fadeInUp" data-wow-delay="250ms">
+                <div class="row mb-5">
+          <div class="col-12 text-center wow fadeInUp" data-wow-delay="250ms" >
+            <h2 class="section-title mb-3" style="color:#0e3066; font-family:'Exotc350 DmBd BT'">{{sku}}</h2>
+          </div>
+        </div>
+               <div class="col-md-12">
+                  <section class = "gallery">
+    <div class = "container">
+
+
+        <div class = "gallery-items">
+            {% for i in l %}
+            <div class = "item">
+                <a target="_blank" href="/media/{{i.newspaperPictures}}"><img src="/media/{{i.newspaperPictures}}" alt="Cinque Terre" ></a>
+
+            </div>
+            {% endfor %}
+        </div>
+        <div class ="pagination">
+        <div class="prev">Prev</div>
+        <div class ="page"> Page <span class = "page-num"> </span></div>
+        <div class ="next"> Next </div>
+        </div>
+
+</div>
+
+</section>
+
+
+
+
+                   </div>
+
+        </div>
+
+        <!-- Register Now Countdown -->
+        </section><br>
+
+   <br><br><br>
+     <!-- ##### Hero Area End ##### -->
+
+
+
+    <!-- ##### Register Now Start ##### -->
+
+    <!-- ##### Register Now End ##### -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+            <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <p>The Lyallpur Khalsa College of Engineering got established in 2013 under the aegis of Khalsa College Lyallpur Education Charitable Trust.</p>
+              </div>
+                <div class="col-md-4">
+                <h3 class="footer-heading mb-4">Addresss</h3>
+                <ul class="list-unstyled">
+            <li class="mb-2">Lyallpur Khalsa College of Engineering,Jalandhar</li>
+            <li class="mb-2">9779251682</li>
+            <li class="mb-2">9779251682</li>
+            <li class="mb-2">preetkomal843@gmail.com</li>
+          </ul></div>
+
+              <div class="col-md-4 ml-auto">
+                <h3 class="footer-heading mb-4 ">Quick Links</h3>
+                <ul class="list-unstyled">
+                  <li><a href="{%url 'about'%}">About Us</a></li>
+                  <li><a href="{%url 'home'%}" >Services</a></li>
+                  <li><a href="{%url 'home'%}">Home</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+
+                </div>
+                </div>
+                </div>
+            </div>
+        <br>
+             <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i></a> </p><br></div>
+<!-- Link back to Color
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span>9779251682</a>
+                <a href="#"><span>Email:</span>  preetkomal843@.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+     <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+
+</body>
+
+</html>
+<style>
+
+
+    *{
+      box-sizing: border-box;
+      }
+
+
+    .gallery{
+	width: 100%;
+	float: left;
+	padding:30px 15px;
+	height:auto;
+}
+
+   .gallery .title h1{
+         font-size:36px;
+
+         color: #000000;
+         text-align: center;
+        }
+
+         .title p{
+         font-size:15px;
+
+         color: #000000;
+         text-align: center;
+        }
+
+    .gallery .gallery-items .item{
+            float:left;
+            width:25%;
+            padding:20px;
+            position: relative;
+         }
+
+    .gallery .gallery-items .item.hide{
+             display:none;
+        }
+
+    .gallery .gallery-items .item.show{
+             display:block;
+             animation:show .5s ease;
+        }
+
+     @keyframes show{
+
+          0%{
+              opacity:0;
+              transform:scale(0.9);
+            }
+            100%{
+                opacity:1;
+                transform:scale(1);
+                }
+    }
+
+
+     .gallery .gallery-items .item img{
+           width:100%;
+           display:block;
+          }
+
+     .gallery .pagination{
+           width:100%;
+           float:left;
+           padding :15px;
+           text-align:center;
+         }
+
+      .gallery .pagination div{
+             display:inline-block;
+             margin: 0 10px;
+           }
+
+       .gallery .pagination .page{
+              color:gray;
+           }
+
+      .gallery .pagination .prev,.gallery .pagination .next{
+               color:#000;
+               border:1px solid #000;
+               font-size :15px;
+               padding:7px 15px;
+               cursor: pointer;
+        }
+       .gallery .pagination .prev.disabled,
+       .gallery .pagination .next.disabled{
+            border-color: gray;
+            color:gray;
+            pointer-events: none;
+        }
+
+</style>
+
+<script>
+         const galleryItems = document.querySelector(".gallery-items").children;
+         const prev = document.querySelector(".prev");
+         const next = document.querySelector(".next");
+         const page = document.querySelector(".page-num");
+         const maxItem = 12;
+         let index = 1;
+           const pagination = Math.ceil(galleryItems.length/maxItem);
+           console.log(pagination)
+         prev.addEventListener("click",function(){
+              index--;
+              check();
+              showItems();
+         })
+
+         next.addEventListener("click",function(){
+              index++;
+              check();
+              showItems();
+         })
+
+         function check(){
+  	           if(index==pagination){
+  	 	            next.classList.add("disabled");
+  	 }
+  	           else{
+  	               next.classList.remove("disabled");
+  	 }
+
+  	          if(index==1){
+  	 	          prev.classList.add("disabled");
+  	 }
+  	           else{
+  	              prev.classList.remove("disabled");
+  	 }
+  }
+
+  function showItems(){
+         for(let i=0;i<galleryItems.length;i++){
+             galleryItems[i].classList.remove("show");
+             galleryItems[i].classList.add("hide");
+                   if(i>=(index*maxItem)-maxItem && i<index*maxItem){
+                              galleryItems[i].classList.remove("hide");
+                              galleryItems[i].classList.add("show");
+                              }
+                              page.innerHTML=index;
+                 }
+         }
+
+         window.onload=function(){
+  	              showItems();
+  	              check();
+  	          }
+</script>
+
+

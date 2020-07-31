@@ -1,0 +1,20 @@
+{% extends "website/adminn.html" %}
+<head>
+    <meta charset="UTF-8">
+    {% block title %} Add Streams {% endblock %}
+</head>
+<body>
+{% block content %}
+    <div>   </div>
+    <form method = "post"  align="center" enctype="multipart/form-data" style="color:white";>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="button"  style="background-color:black; color:white; padding:15px; border-radius:20px;">
+							Add
+						</button>
+    </form>
+
+
+{% endblock %}
+</body>
+</html>

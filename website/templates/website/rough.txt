@@ -1,0 +1,229 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block content %}
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area bg-img bg-overlay-2by5" style="background-image:url({% static 'img/col21.jpg' %});height:400px ;opacity: 0.5;" data-aos="fade" >
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <!-- Hero Content -->
+                    <div class="hero-content text-center wow fadeInUp" data-wow-delay="500ms">
+                         <h2 style= "color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px #000000, 0 0 5px #000000;font-size:40px"><b>Life @ LKCE<br>
+Developing a new generation thought leader<br></b></h2>
+               
+                      
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <div class="container">
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="{% static 'img/col32.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><h3 style="color:orange">Campus</h3><br><h5>
+LKCE Institutes are situated in a pollution free environment and the campus is spread over in 11 Acres in Lush Green lawns all around. It provides solace to the mind and soul of everyone who visits the campus.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+       <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="{% static 'img/col24.jpg' %}" alt="Fjords" style="width:100%;height:200px">
+          <div class="caption">
+            <p><h3 style="color:orange">Classrooms</h3><h5>Bright, spacious and air conditioned classrooms provide our students a conducive and peaceful environment for learning through teaching & focused discussions. The classrooms have been designed to bring together analysis with action and are augmented with integrated audio-visual teaching aids for lectures, presentations, practical's etc. The classrooms are well ventilated and lighted up.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+      <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="{% static 'img/col26.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><h3 style="color:orange">Laboratories</h3>
+<h5>The laboratories are well equipped with the necessary equipments to facilitates the students of LKCE to experiment, learn and analyze in order to develop the academic practical know how. State of the art quality instruments and machines have been supplied for the perfection and ease of conducting experiments in every single laboratory.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+   
+  </div>
+
+   </div>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="{% static 'img/col23.jpg' %}" alt="Nature" style="width:100%" >
+          <div class="caption">
+            <p><h3 style="color:orange">Library</h3><br>EXPLORE THE SOURCE OF INFORMATION<br><h5>
+Library is a source of unlimited knowledge and information for students. The library supports the Institution's program to study and research by offering access to a wide range of materials both printed and electronic. Library at LKCE is having over 1000 titles on Engineering, Science, Mathematics and Economics covering almost every subject of computers, management and others with a total of more than 3500 volumes, along with 50 journals like Springer, Elsevier, IEEE, Wiley-Blackwell and many magazines of National and International repute.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="{% static 'img/col25.jpg' %}" alt="Nature" style="width:100%;height:220px">
+          <div class="caption">
+            <p><h3 style="color:orange">Playground</h3>
+<h5>Along with wide variety of clubs and societies contributing to LKCE' lively life, we have a fine tradition in sports. We have earned a reputation for success in intercollegiate competitions and tournaments, sometimes teaming up with other graduate colleges. We provide indoor and outdoor sports facilities including athletics, badminton, football, volleyball, table tennis, basketball, cricket, hockey etc. Students participate in Sports with great enthusiasm. A new gymnasium has come up in the institute with most modern equipment so that students can work out in the evening and gain freshness.
+
+Every year, LKCE organize two days Sports Meet for the students in the campus athletics track. Students participate in all the events with full enthusiasm.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="{% static 'img/col27.jpg' %}" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p><h3 style="color:orange">Gymnasium</h3><h5>The LKCE takes great pride in its state of the art Gymnasium. The gym is equipped with most modern work out machines like exercise bike, rowing machine, stepper and multigym. Also, dumbbells and discs are available in all sizes to provide participants extensive free weight training. All the three types - Flat, Inclined and Declined - are available for the bench-press enthusiasts. The Gym floor features a layer of plywood and adds to the ambience of the Gym, making the workout a highly enjoyable and refreshing experience. A complete boxing kit consisting of punching bags and gloves adds another feather to the cap. The LKCE Campus also employs the services of part-time yoga trainer and weight instructor.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <div class="container">
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="{% static 'img/col31.jpg' %}" alt="Lights" style="width:100%;height:220px">
+          <div class="caption">
+            <p><h3 style="color:orange">Auditorium</h3><br><h5>
+LKCE provides state-of-the-art auditorium that acts as a common ground for students, faculty and corporate personalities for regular interface through conferences, education fairs and various cultural activities.
+
+</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+       <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="{% static 'img/col29.jpg' %}" alt="Fjords" style="width:100%;height:200px">
+          <div class="caption">
+            <p><h3 style="color:orange">Hostel</h3><h5>A wide range of residential facilities are offered to suit the need of the students. The College has separate hostels for boys and girls. The hostel building has spacious & airy rooms. Hostels have all the modern facilities to make students feel at home. Girls Hostel is located in the staff colony of Lyallpur Khalsa College which makes it absolutely safe and secure. The Boys hostel building has spacious, airy rooms with marble flooring.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+      <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="{% static 'img/col30.jpg' %}" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p><h3 style="color:orange">24-hour Power Supply</h3>
+<h5>The college has five large capacity generators of its own and uninterrupted power supply is available 24 hours to bear the load of all classrooms, labs and offices. Even, all the college A.Cs. Works on generators.</h5></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+   
+  </div>
+
+   </div>
+
+   <br><br><br>
+     <!-- ##### Hero Area End ##### -->
+
+    
+   
+    <!-- ##### Register Now Start ##### -->
+    
+    <!-- ##### Register Now End ##### -->
+    
+   
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+            <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+              </div>
+                <div class="col-md-4">
+                <h3 class="footer-heading mb-4">Addresss</h3>
+                <ul class="list-unstyled">
+            <li class="mb-2">Lyallpur Khalsa College of Engineering,Jalandhar</li>
+            <li class="mb-2">9779251682</li>
+            <li class="mb-2">9779251682</li>
+            <li class="mb-2">preetkomal843@gmail.com</li>
+          </ul></div>
+              
+              <div class="col-md-4 ml-auto">
+                <h3 class="footer-heading mb-4 ">Quick Links</h3>
+                <ul class="list-unstyled">
+                  <li><a href="{%url 'about'%}">About Us</a></li>
+                  <li><a href="{%url 'home'%}" >Services</a></li>
+                  <li><a href="{%url 'home'%}">Home</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+          
+                </div>
+                </div>
+                </div>
+            </div>
+        <br>
+             <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i></a> </p><br></div>
+<!-- Link back to Color
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span>9779251682</a>
+                <a href="#"><span>Email:</span>  preetkomal843@.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+     <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

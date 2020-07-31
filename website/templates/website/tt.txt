@@ -1,0 +1,276 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+
+    <br>
+     <section class="register-now section-padding-100-0 d-flex justify-content-between align-items-center" >
+        <!-- Register Contact Form -->
+
+            <div class="container-fluid mb-100 wow fadeInUp" data-wow-delay="250ms">
+                <div class="row mb-5">
+          <div class="col-12 text-center wow fadeInUp" data-wow-delay="250ms" >
+            <h2 class="section-title mb-3" style="color:#0e3066; font-family:'Exotc350 DmBd BT'">{{sku}}</h2>
+          </div>
+        </div>
+               <div class="col-md-12">
+                  <section class = "gallery">
+    <div class = "container">
+
+
+        <div class = "gallery-items">
+            {% for i in l %}
+            <div class = "item">
+                <a target="_blank" href="/media/{{i.picture}}"><img src="/media/{{i.picture}}" alt="Cinque Terre" ></a>
+                 <h6><b>{{i.student_name}}</b></h6>
+                <h6><b>({{i.company_name}})</b></h6>
+            </div>
+            {% endfor %}
+        </div>
+        <div class ="pagination">
+        <div class="prev">Prev</div>
+        <div class ="page"> Page <span class = "page-num"> </span></div>
+        <div class ="next"> Next </div>
+        </div>
+
+</div>
+
+</section>
+                   </div>
+
+        </div>
+
+        <!-- Register Now Countdown -->
+        </section>
+
+
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+            <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <p>The Lyallpur Khalsa College of Engineering got established in 2013 under the aegis of Khalsa College Lyallpur Education Charitable Trust.</p>
+              </div>
+                <div class="col-md-4">
+                <h3 class="footer-heading mb-4">Addresss</h3>
+                <ul class="list-unstyled">
+            <li class="mb-2">Lyallpur Khalsa College of Engineering,Jalandhar</li>
+            <li class="mb-2">9779251682</li>
+            <li class="mb-2">9779251682</li>
+            <li class="mb-2">preetkomal843@gmail.com</li>
+          </ul></div>
+
+              <div class="col-md-4 ml-auto">
+                <h3 class="footer-heading mb-4 ">Quick Links</h3>
+                <ul class="list-unstyled">
+                  <li><a href="{%url 'about'%}">About Us</a></li>
+                  <li><a href="{%url 'home'%}" >Services</a></li>
+                  <li><a href="{%url 'home'%}">Home</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+
+                </div>
+                </div>
+                </div>
+            </div>
+        <br>
+             <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i></a> </p><br></div>
+<!-- Link back to Color
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span>9779251682</a>
+                <a href="#"><span>Email:</span>  preetkomal843@.com</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+     <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+
+</body>
+
+</html>
+<style>
+
+
+    *{
+      box-sizing: border-box;
+      }
+
+
+    .gallery{
+	width: 100%;
+	float: left;
+	padding:30px 15px;
+	height:auto;
+}
+
+   .gallery .title h1{
+         font-size:36px;
+
+         color: #000000;
+         text-align: center;
+        }
+
+         .title p{
+         font-size:15px;
+
+         color: #000000;
+         text-align: center;
+        }
+
+    .gallery .gallery-items .item{
+            float:left;
+            width:25%;
+            padding:20px;
+            position: relative;
+         }
+
+    .gallery .gallery-items .item.hide{
+             display:none;
+        }
+
+    .gallery .gallery-items .item.show{
+             display:block;
+             animation:show .5s ease;
+        }
+
+     @keyframes show{
+
+          0%{
+              opacity:0;
+              transform:scale(0.9);
+            }
+            100%{
+                opacity:1;
+                transform:scale(1);
+                }
+    }
+
+
+     .gallery .gallery-items .item img{
+           width:100%;
+           display:block;
+          }
+
+     .gallery .pagination{
+           width:100%;
+           float:left;
+           padding :15px;
+           text-align:center;
+         }
+
+      .gallery .pagination div{
+             display:inline-block;
+             margin: 0 10px;
+           }
+
+       .gallery .pagination .page{
+              color:gray;
+           }
+
+      .gallery .pagination .prev,.gallery .pagination .next{
+               color:#000;
+               border:1px solid #000;
+               font-size :15px;
+               padding:7px 15px;
+               cursor: pointer;
+        }
+       .gallery .pagination .prev.disabled,
+       .gallery .pagination .next.disabled{
+            border-color: gray;
+            color:gray;
+            pointer-events: none;
+        }
+
+</style>
+
+<script>
+         const galleryItems = document.querySelector(".gallery-items").children;
+         const prev = document.querySelector(".prev");
+         const next = document.querySelector(".next");
+         const page = document.querySelector(".page-num");
+         const maxItem = 12;
+         let index = 1;
+           const pagination = Math.ceil(galleryItems.length/maxItem);
+           console.log(pagination)
+         prev.addEventListener("click",function(){
+              index--;
+              check();
+              showItems();
+         })
+
+         next.addEventListener("click",function(){
+              index++;
+              check();
+              showItems();
+         })
+
+         function check(){
+  	           if(index==pagination){
+  	 	            next.classList.add("disabled");
+  	 }
+  	           else{
+  	               next.classList.remove("disabled");
+  	 }
+
+  	          if(index==1){
+  	 	          prev.classList.add("disabled");
+  	 }
+  	           else{
+  	              prev.classList.remove("disabled");
+  	 }
+  }
+
+  function showItems(){
+         for(let i=0;i<galleryItems.length;i++){
+             galleryItems[i].classList.remove("show");
+             galleryItems[i].classList.add("hide");
+                   if(i>=(index*maxItem)-maxItem && i<index*maxItem){
+                              galleryItems[i].classList.remove("hide");
+                              galleryItems[i].classList.add("show");
+                              }
+                              page.innerHTML=index;
+                 }
+         }
+
+         window.onload=function(){
+  	              showItems();
+  	              check();
+  	          }
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block content %}
+    <!-- ##### Header Area End ##### -->
+     <!-- ##### Google Maps ##### -->
+    <!-- ##### Contact Area Start ##### -->
+<br><br>
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-12">
+                    <div class="contact--info mt-50 mb-100">
+                  <center>      <h3>Academic Calender</h3></center></div></div>
+
+
+                    <div class="col-12" >
+                        {%  for j1 in j %}
+          <center>  <img src = "/media/{{j1.calender}}" style="width:355px;height:370px;"></center>
+         <center>  <br><a href="/media/{{j1.calender}}" download><h5>{{j1.uploaded_at}}</h5></a>
+             <p><a href="/index">Return to home</a></p></center>
+
+                 {% endfor %}
+                    </div>
+                </div>
+
+        </div>
+
+
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+            <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <p>The Lyallpur Khalsa College of Engineering got established in 2013 under the aegis of Khalsa College Lyallpur Education Charitable Trust.</p>
+              </div>
+                <div class="col-md-4">
+                <h3 class="footer-heading mb-4">Addresss</h3>
+                <ul class="list-unstyled">
+            <li class="mb-2">Lyallpur Khalsa College of Engineering,Jalandhar</li>
+            <li class="mb-2">987654321</li>
+            <li class="mb-2">987654331</li>
+            <li class="mb-2">preetkomal843@gmail.com</li>
+          </ul></div>
+
+              <div class="col-md-4 ml-auto">
+                <h3 class="footer-heading mb-4 ">Quick Links</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#" >Services</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+
+                </div>
+                </div>
+                </div>
+            </div>
+        <br>
+             <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i></a> </p><br></div>
+<!-- Link back to Color
+
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Phone:</span>+91-181-2350400 /402 /403</a>
+                <a href="#"><span>Email:</span>info@lkcengg.edu.in</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Follow us</span>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+<!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+    <script src="js/google-map/map-active.js"></script>
+</body>
+
+</html>
+{% endblock %}
